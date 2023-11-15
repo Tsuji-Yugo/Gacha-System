@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+#spinButton {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#points {
+  margin-top: 10px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.spin-animation {
+  animation: rotate 2s infinite;
+}

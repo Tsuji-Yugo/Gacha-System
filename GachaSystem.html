@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ガチャ</title>
+  <link rel="stylesheet" href="Gacha.css">
 </head>
 <body>
-  <p>ガチャ</p>
+
+<div>
+  <h1>ガチャ</h1>
+  <button id="spinButton" onclick="spinGacha()">引く</button>
+  <p id="result"></p>
+  <p id="points">ポイント: <span id="pointValue">100</span></p>
+</div>
+
+<script src="GachaSystem.js"></script>
+
 </body>
 </html>
